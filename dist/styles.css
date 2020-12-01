@@ -1,0 +1,94 @@
+body {
+	padding: 2em;
+}
+
+#app {
+	display: flex;
+	justify-content: space-between;
+}
+
+#toolbar {
+	display: flex;
+	flex-basis: 4%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+#toolbar button {
+	width: 3em;
+	height: 3em;
+	border: none;
+	border-radius: 4px;
+	margin: 1px;
+}
+
+#toolbar button img {
+	width: 2em;
+	height: 2em;
+}
+
+#toolbar button.creation-tool {
+	box-shadow: none;
+	color: whitesmoke;
+	background-color: #23632f;
+}
+
+#toolbar button.creation-tool.selected {
+	background-color: #b80202;
+}
+
+#toolbar button.utility-tool {
+	color: whitesmoke;
+	background-color: #226d6d;
+}
+
+#toolbar button.utility-tool.selected {
+	background-color: #b80202;
+}
+
+canvas {
+	flex-basis: 65%;
+	border: 0.1em solid darkgray;
+	border-radius: 0.3em;
+	flex-grow: 1;
+	background-color: white;
+}
+
+#color-manager {
+	flex-basis: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.color-picker {
+	padding-left: 0.5em;
+	height: 45%;
+	flex-basis: 30%;
+}
+
+.color-picker .color-group {
+	display: flex;
+}
+
+.color-group ul {
+	flex-basis: 3;
+}
+
+.color-preview {
+	flex-basis: 1;
+	width: 4.5em;
+	height: 7.8em;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+.weight-picker {
+	flex-basis: 10%;
+	padding-left: 1em;
+	height: 10%;
+}
+
+ul {
+	list-style-type: none;
+}
